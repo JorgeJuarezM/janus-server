@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="/eureca.js"></script>
+    <script type="text/javascript">
+        var cli = new Eureca.Client();
+        cli.ready(function (remote) {
+            remote.execute("Test.Create", "a", "b").onReady(function (result) {
+                console.log(result);
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Hola Mundo</h1>
+</body>
+</html>

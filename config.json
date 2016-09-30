@@ -1,0 +1,10 @@
+{
+  "connections": {
+    "janus": {
+      "server": "172.16.100.6",
+      "password": "a1ccf38$",
+      "database": "kosmosDev",
+      "user": "kosmos"
+    }
+  }
+}
