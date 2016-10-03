@@ -10,6 +10,15 @@ var config = requireAll({
 
 config.appPath = process.cwd();
 
+delete config["local"];
+var configLocalPath = path.resolve(process.cwd(), "config/local.js");
+if (fs.existsSync(configLocalPath)) {
+    var local = require(configLocalPath);
+    require("util")._extend(config, local);
+}
+
+console.log(config);
+
 var janusServer = new JanusServer(config);
 janusServer.Run();
 
