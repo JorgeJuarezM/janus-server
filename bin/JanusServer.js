@@ -16,8 +16,7 @@ if (fs.existsSync(configLocalPath)) {
     var local = require(configLocalPath);
     require("util")._extend(config, local);
 }
-
-console.log(config);
+// console.log(config);
 
 var janusServer = new JanusServer(config);
 janusServer.Run();
