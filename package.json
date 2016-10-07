@@ -12,7 +12,9 @@
   "license": "MIT",
   "dependencies": {
     "asyncawait": "^1.0.6",
+    "basic-auth-connect": "^1.0.0",
     "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
     "captains-log": "^1.0.0",
     "engine.io": "^1.6.11",
     "eureca.io": "^0.6.42",
